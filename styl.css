@@ -84,7 +84,7 @@ margin-top: 5px;
 	border: 0;
 	text-align: center;
 	float: right;
-	margin-top: -35px;
+	margin-top: -30px;
 }
 .posts button:hover {
 	background-color: #7c7c7c;
@@ -101,7 +101,11 @@ margin-top: 5px;
 .buttons {
 	text-align: right;
 	margin-right: 10px;
-	margin-top: 25px;
+	margin-top: 30px;
+}
+.buttons nav {
+	float: right;
+	margin-left: 5px;
 }
 .buttons i{
 	color: white;
@@ -133,6 +137,7 @@ margin-top: 5px;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 160px;
 	color: #3c3b3b;
+	display: block;
 }
 .telo i {
 	color: black;
@@ -160,6 +165,7 @@ margin-top: 5px;
 	width: 30%;
 	float: right;
 }
+
 .friends i {
 	color: #52e509;
 	margin-right: 5px;
@@ -170,9 +176,13 @@ margin-top: 5px;
 	margin-left: 150px;
 }
 .friends li {
-	margin-left: 110px;
+	padding-left: 110px;
 	text-align: left;
 	font-size: 25px;
+
+}
+.friends li:hover {
+	background-color: #7c7c7c;
 }
 
 
@@ -235,10 +245,20 @@ margin-top: 5px;
 	margin: 0 auto;
 }
 
+
+@media screen and (max-width: 1280px) {
+	.posts button {
+		margin-top: -35px;
+	}
+}
 @media screen and (max-width: 768px) {
 	.telo p {
 		text-align: center;
 		margin-left: 0;
+	}
+	.telo {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.telo h1{
 		text-align: center;
@@ -258,15 +278,35 @@ margin-top: 5px;
 		width: 100%;
 	}
 	.friends li {
-		text-align: center;
-		margin-left: 0;
+		text-align: left;
+		padding-left: 20%;
 	}
 	.friends h2 {
 		text-align: center;
 		margin-left: 0;
 	}
 	.buttons button {
-	
+	float: none;
+	width: 110px;
+	height: 25px;
+	margin-top: -25px;
+	}
+	.buttons b{
+		font-size: 10px;
+	}
+	.buttons i{
+		font-size: 10px;
+	}
+	.buttons {
+		text-align: right;
+	}
+	.buttons nav {
+		margin-bottom: 10px;
+		float: none;
+		margin-left: 0;
+	}
+	img {
+		margin-top: -50px;
 	}
 }
 
