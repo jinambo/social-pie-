@@ -120,9 +120,9 @@ margin-top: 10px;
 	height: 30px;
 	background-color: #3c3c3c;
 	border-radius: 6px 6px 6px;
-	
+
 	margin-top: 5px;
-	
+
 
 }
 .buttons button:hover {
@@ -255,6 +255,12 @@ top:25px;
 }
 
 @media screen and (max-width: 768px) {
+	.header {
+		height: 100px;
+	}
+	.lista {
+		top: 100px;
+	}
 	.telo p {
 		text-align: center;
 		margin-left: 0;
@@ -275,6 +281,9 @@ top:25px;
 		float: none;
 		padding-bottom: 25px;
 	}
+	.userbar {
+		visibility: hidden;
+	}
 	.friends {
 		text-align: center;
 		float: none;
@@ -283,15 +292,36 @@ top:25px;
 	.friends li {
 		text-align: left;
 		padding-left:10%;
-		
+
 	}
 	.friends h2 {
 		text-align: center;
 		margin-left: 0;
 	}
-
+	.buttons button {
+		width: 120px;
+	}
+	.buttons b {
+		font-size: 10px;
+	}
+	.buttons i {
+		font-size: 14px;
+	}
+	.buttons {
+		margin-top: -25px;
+	}
+	.profilofka img {
+		width: 110px;
+		height: 110px;
+	}
 	img {
-		margin-top: -50px;
+		margin-top: -40px;
+	}
+	.telo {
+		margin-top: 125px;
+	}
+	.dropdown{
+		top: 0px;
 	}
 }
 
