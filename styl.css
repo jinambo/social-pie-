@@ -6,7 +6,7 @@ body {
 }
 
 img{
-  margin-top: -30px;
+  margin-top: -80px;
   border-radius: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -15,7 +15,7 @@ img{
 	position:relative; /*You may also use fixed depending on your needs.*/
 
 top:0; /*If you want it at the bottom you probably want bottom:0 instead*/
-z-index: 1;
+z-index: 2;
 
 }
 
@@ -24,7 +24,7 @@ z-index: 1;
 	height: 30px;
 	background-color: #3c3c3c;
 	position: fixed;
-	z-index: 2;
+	z-index: 99;
 }
 .userbar img {
 	margin-top: 7px;
@@ -41,9 +41,9 @@ z-index: 1;
 	margin-left: 10px;
 
 }
+
 .header {
 	background-image: url("bg.jpg");
-
 	top: 0;
 	width: 100%;
 	height: 135px;
@@ -55,8 +55,8 @@ z-index: 1;
 	width: 100%;
 	height: 35px;
 	top: 135px;
-	position: absolute;
 	border-top: 4px solid white;
+position: absolute;
 
 }
 .lista i {
@@ -75,7 +75,10 @@ margin-top: 5px;
 	text-align: center;
 }
 .profile button:hover {
-	background-color: #7c7c7c;
+	background-color: #424141;
+}
+.profile button:focus {
+	border-bottom: 5px solid white;
 }
 
 .posts button {
@@ -87,7 +90,10 @@ margin-top: 5px;
 	margin-top: -30px;
 }
 .posts button:hover {
-	background-color: #7c7c7c;
+	background-color: #424141;
+}
+.posts button:focus {
+	border-bottom: 5px solid white;
 }
 
 .settings {
@@ -97,15 +103,12 @@ margin-top: 5px;
 	font-size: 35px;
 	color: white;
 	margin-left: 15px;
+margin-top: 10px;
 }
 .buttons {
 	text-align: right;
 	margin-right: 10px;
-	margin-top: 30px;
-}
-.buttons nav {
-	float: right;
-	margin-left: 5px;
+	margin-top: 5px;
 }
 .buttons i{
 	color: white;
@@ -117,10 +120,13 @@ margin-top: 5px;
 	height: 30px;
 	background-color: #3c3c3c;
 	border-radius: 6px 6px 6px;
+	
+	margin-top: 5px;
+	
 
 }
 .buttons button:hover {
-	background-color: #7c7c7c;
+	background-color: #424141;
 }
 
 .buttons b {
@@ -135,9 +141,10 @@ margin-top: 5px;
 .telo {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	margin-top: 160px;
+	margin-top: 250px;
 	color: #3c3b3b;
-	display: block;
+	display:block;
+margin-top: 155px;
 }
 .telo i {
 	color: black;
@@ -165,7 +172,6 @@ margin-top: 5px;
 	width: 30%;
 	float: right;
 }
-
 .friends i {
 	color: #52e509;
 	margin-right: 5px;
@@ -176,30 +182,28 @@ margin-top: 5px;
 	margin-left: 150px;
 }
 .friends li {
-	padding-left: 110px;
+	margin-left: 110px;
 	text-align: left;
 	font-size: 25px;
-
 }
+
 .friends li:hover {
-	background-color: #7c7c7c;
+	background-color: gray;
 }
-
-
 .dropdown {
   position: relative;
   display: inline-block;
 	text-align: center;
 	margin: 0 auto;
 	line-height: 25px;
-	top: 30px;
+top:25px;
 
 }
 
 
 .dropdown-content {
     display: none;
-		top: 23px;
+		top: 31px;
 		left: 2px;
 		padding-left: 3px;
 		padding-right: 3px;
@@ -227,7 +231,7 @@ margin-top: 5px;
 .dropdown-content a:hover {
 	text-align: center;
 	margin: 0 auto;
-	background-color: #7c7c7c;
+	background-color: #424141;
 	}
 
 
@@ -246,11 +250,6 @@ margin-top: 5px;
 }
 
 
-@media screen and (max-width: 1280px) {
-	.posts button {
-		margin-top: -35px;
-	}
-}
 @media screen and (max-width: 768px) {
 	.telo p {
 		text-align: center;
@@ -279,32 +278,14 @@ margin-top: 5px;
 	}
 	.friends li {
 		text-align: left;
-		padding-left: 20%;
+		padding-left:10%;
+		
 	}
 	.friends h2 {
 		text-align: center;
 		margin-left: 0;
 	}
-	.buttons button {
-	float: none;
-	width: 110px;
-	height: 25px;
-	margin-top: -25px;
-	}
-	.buttons b{
-		font-size: 10px;
-	}
-	.buttons i{
-		font-size: 10px;
-	}
-	.buttons {
-		text-align: right;
-	}
-	.buttons nav {
-		margin-bottom: 10px;
-		float: none;
-		margin-left: 0;
-	}
+
 	img {
 		margin-top: -50px;
 	}
